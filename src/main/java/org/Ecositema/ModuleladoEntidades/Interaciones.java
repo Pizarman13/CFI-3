@@ -3,6 +3,19 @@ package org.Ecositema.ModuleladoEntidades;
 public class Interaciones {
 
     public void interactuar(Organismo organismo1, Organismo organismo2, Ambiente ambiente) {
+
+        System.out.println("Los organismos estan interactuando");
+        System.out.println("Salud del organismo 1: " + organismo1.getSalud());
+        System.out.println("Salud del organismo 2: " + organismo2.getSalud());
+        System.out.println("Edad del organismo 1: " + organismo1.getEdad());
+        System.out.println("Edad del organismo 2: " + organismo2.getEdad());
+        System.out.println("Posicion del organismo 1: " + organismo1.getPosicion());
+        System.out.println("Posicion del organismo 2: " + organismo2.getPosicion());
+        System.out.println("Clima del ambiente: " + ambiente.getClima());
+        System.out.println("Terreno del ambiente: " + ambiente.getTerreno());
+        System.out.println("Recursos disponibles del ambiente: " + ambiente.getRecursosDisponibles());
+        System.out.println("-------------------------------------------------");
+
         if (organismo1.getPosicion() == organismo2.getPosicion()) {
             if (organismo1 instanceof Animal && organismo2 instanceof Animal) {
                 System.out.println("Los animales se atacan");
@@ -25,14 +38,6 @@ public class Interaciones {
 
         organismo1.envejecer();
         organismo2.envejecer();
-
-        if(organismo1.getSalud() <= 0){
-            organismo1.morir();
-        }
-
-        if(organismo2.getSalud() <= 0){
-            organismo2.morir();
-        }
 
         if(organismo1.getEdad() > 10 && organismo1 instanceof Animal){
             organismo1.reproducirse();
@@ -116,6 +121,27 @@ public class Interaciones {
             ambiente.desierto();
         }
 
+        System.out.println("-------------------------------------------------");
+        System.out.println("Los organismos han interactuado");
+        System.out.println("Salud del organismo 1: " + organismo1.getSalud());
+
+        if(organismo1.getSalud() <= 0){
+            organismo1.morir();
+        }
+
+        System.out.println("Salud del organismo 2: " + organismo2.getSalud());
+
+        if(organismo2.getSalud() <= 0){
+            organismo2.morir();
+        }
+
+        System.out.println("Edad del organismo 1: " + organismo1.getEdad());
+        System.out.println("Edad del organismo 2: " + organismo2.getEdad());
+        System.out.println("Posicion del organismo 1: " + organismo1.getPosicion());
+        System.out.println("Posicion del organismo 2: " + organismo2.getPosicion());
+        System.out.println("Clima del ambiente: " + ambiente.getClima());
+        System.out.println("Terreno del ambiente: " + ambiente.getTerreno());
+        System.out.println("Recursos disponibles del ambiente: " + ambiente.getRecursosDisponibles());
     }
 
 }
