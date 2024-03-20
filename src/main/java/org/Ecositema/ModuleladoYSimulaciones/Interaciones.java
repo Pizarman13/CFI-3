@@ -2,7 +2,7 @@ package org.Ecositema.ModuleladoYSimulaciones;
 
 public class Interaciones {
 
-    public void interactuar(Organismo organismo1, Organismo organismo2, Ambiente ambiente) {
+    public static void interactuar(Organismo organismo1, Organismo organismo2, Ambiente ambiente) {
 
         System.out.println("Los organismos estan interactuando");
         System.out.println("Salud del organismo 1: " + organismo1.getSalud());
