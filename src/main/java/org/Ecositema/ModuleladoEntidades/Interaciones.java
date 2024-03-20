@@ -90,6 +90,32 @@ public class Interaciones {
             ambiente.selva();
         }
 
+        int numeroAleatorio = (int) (Math.random() * 5);
+
+        if(numeroAleatorio == 0){
+            ambiente.setClima("Primavera");
+            System.out.println("Debido al cambio climatico el clima ha cambiado a primavera");
+            ambiente.primavera();
+        } else if(numeroAleatorio == 1){
+            ambiente.setClima("Invierno");
+            System.out.println("Debido al cambio climatico el clima ha cambiado a invierno");
+            ambiente.invierno();
+        } else if(numeroAleatorio == 2){
+            System.out.println("Una enfermedad ha afectado a los organismos");
+            organismo1.setSalud(organismo1.getSalud() - 10);
+            organismo2.setSalud(organismo2.getSalud() - 10);
+        } else if(numeroAleatorio == 3){
+            System.out.println("Una plaga ha afectado a los organismos");
+            organismo1.setSalud(organismo1.getSalud() - 10);
+            organismo2.setSalud(organismo2.getSalud() - 10);
+            ambiente.setRecursosDisponibles(ambiente.getRecursosDisponibles() - 10);
+        } else if(numeroAleatorio == 4){
+            System.out.println("Un incendio ha afectado a los organismos y al terreno");
+            organismo1.setSalud(organismo1.getSalud() - 10);
+            organismo2.setSalud(organismo2.getSalud() - 10);
+            ambiente.desierto();
+        }
+
     }
 
 }

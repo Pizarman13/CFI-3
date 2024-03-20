@@ -8,11 +8,11 @@ public class Planta extends Organismo{
 
     @Override
     public void reproducirse() {
-        if (estadoReproductivo && Math.random() < 0.1) { // Probabilidad de reproducción
-            System.out.println("Se ha reproducido");
+        if (estadoReproductivo && Math.random() < 0.5) { // Probabilidad de reproducción
+            System.out.println("La panta se ha reproducido");
             Planta nuevaPlanta = new Planta(100, 1, false, 0);
         } else {
-            System.out.println("No se pudo reproducir");
+            System.out.println("La planta no se pudo reproducir");
         }
     }
 

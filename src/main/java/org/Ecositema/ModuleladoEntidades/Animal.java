@@ -13,11 +13,11 @@ public class Animal extends Organismo {
 
     @Override
     public void reproducirse() {
-        if (estadoReproductivo && Math.random() < 0.1) { // Probabilidad de reproducción
-            System.out.println("Se ha reproducido");
+        if (estadoReproductivo && Math.random() < 0.4) { // Probabilidad de reproducción
+            System.out.println("El animal se ha reproducido");
             Animal nuevoAnimal = new Animal(100, 1, false, 0);
         } else {
-            System.out.println("No se pudo reproducir");
+            System.out.println("El animal no se pudo reproducir");
         }
     }
 
@@ -28,6 +28,8 @@ public class Animal extends Organismo {
             salud = 100;
         }
     }
+
+
 
 
 }
