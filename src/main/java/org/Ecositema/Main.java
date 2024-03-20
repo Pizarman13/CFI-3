@@ -26,8 +26,20 @@ public class Main {
 
         // Simulamos algunas interacciones
         Interaciones.interactuar(animal1, planta1, aTropical);
+
+        System.out.println("Para continuar con la siguiente simulacion presione enter");
+        sc.nextLine();
+
         Interaciones.interactuar(animal2, planta2, aDesertico);
+
+        System.out.println("Para continuar con la siguiente simulacion presione enter");
+        sc.nextLine();
+
         Interaciones.interactuar(animal3, animal1, aTemplado);
+
+        System.out.println("Para continuar con la siguiente simulacion presione enter");
+        sc.nextLine();
+
         Interaciones.interactuar(animal1, planta1, aFrio);
 
         }
