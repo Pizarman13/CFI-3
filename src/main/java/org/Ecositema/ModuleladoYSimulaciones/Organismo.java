@@ -1,4 +1,4 @@
-package org.Ecositema.ModuleladoEntidades;
+package org.Ecositema.ModuleladoYSimulaciones;
 
 public class Organismo {
 
